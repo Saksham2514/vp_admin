@@ -10,10 +10,12 @@ app.use(express.urlencoded({extended:true}));
 app.use(cors())
 
 const router = require("./router");
+const productRouter = require("./router");
 
 
 const PORT = 8000;
 app.use(router);
+app.use(productRouter);
 
 
 mongoose.connect(process.env.MONGODB_URL, {

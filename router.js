@@ -17,6 +17,7 @@ const {
     updateProduct,
     deleteProduct,
 } = require("./controllers/Product");
+
 const { getOrders, deleteOrder, updateOrder, createOrder } = require("./controllers/Order");
   
 router.get("/users", getUsers);
